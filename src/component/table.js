@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 function TableCom({ firstname, lastname, age }) {
   return (
     <div>
-      <Table striped bordered hover>
+      <Table striped borderless hover>
         <thead>
           <tr>
             <th>age</th>

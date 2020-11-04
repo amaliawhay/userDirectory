@@ -45,6 +45,25 @@ class TableMake extends Component {
     });
     // console.log(this.state.students)
   };
+  handleAgeButton = (event) => {
+    event.preventDefault();
+    this.testFunction();
+    this.setState({ ...this.state, show: false });
+  };
+
+  renderTableData() {
+    return this.state.students.map((student, index) => {
+      const { id, name, age, lastName } = student; //destructuring
+      return (
+        <tr key={id}>
+          <td>{id}</td>
+          <td>{name}</td>
+          <td>{lastName}</td>
+          <td>{age}</td>
+        </tr>
+      );
+    });
+  }
 
   render() {
     return (
