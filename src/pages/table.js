@@ -8,20 +8,25 @@ class TableMake extends Component {
     this.state = {
       //state is by default an object
       students: [
-        { id: 1, name: "Guy", age: 21, lastName: "McGuy" },
+        { id: 1, name: "Sponge", age: 12, lastName: "Bob" },
         {
           id: 2,
-          name: "Dude",
-          age: 19,
-          lastName: "Duderson",
+          name: "Plankton",
+          age: 100,
+          lastName: "Evil",
         },
         {
           id: 3,
-          name: "Sally",
-          age: 16,
-          lastName: "Sue Joe Bob",
+          name: "Mr",
+          age: 50,
+          lastName: "Krabs",
         },
-        { id: 4, name: "Lady", age: 25, lastName: "Face" },
+        {
+          id: 4,
+          name: "Pearl",
+          age: 25,
+          lastName: "Krabs",
+        },
       ],
       show: true,
     };
